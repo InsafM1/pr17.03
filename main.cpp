@@ -1,12 +1,20 @@
 #include <iostream>
 #include <iomanip>
 #include "top-it-vector.hpp"
-int testDefaultVector()
+bool testDefaultVector()
 {
-  Vector< int > v;
+  topit::Vector< int > v;
   bool c = v.empty();
   return !c;
 }
+bool testVectorWithValue()
+{
+  topit::Vector< int > v;
+  v.pushBack(1);
+  bool c =  v.empty;
+  return c;
+}
+
 
 int main()
 {
